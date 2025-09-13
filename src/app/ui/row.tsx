@@ -15,7 +15,7 @@ export default function Row({
   onChange,
   highlight,
 }: RowProps) {
-  const handleKeyPress = (event: any) => {
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const keyCode = event.keyCode || event.which;
     const keyValue = String.fromCharCode(keyCode);
     const isValid = new RegExp("[0-9.]").test(keyValue);
