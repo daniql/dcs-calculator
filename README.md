@@ -10,7 +10,7 @@ This tool helps you calculate the benefits of consolidating multiple debts into 
 
 ## Live Demo
 
-[dcs-calculator-danial.vercel.app](https://dcs-calculator-danial.vercel.app/)
+[dcs-calculator.vercel.app](https://dcs-calculator.vercel.app/)
 
 ## Getting Started
 
