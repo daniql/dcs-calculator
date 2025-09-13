@@ -4,9 +4,9 @@ This tool helps you calculate the benefits of consolidating multiple debts into 
 
 ## Screenshots
 
-![Initial screen](<Screenshot 2025-09-12 at 10.51.52 pm.png>)
-![Filled rows](<Screenshot 2025-09-12 at 10.51.18 pm.png>)
-![Results screen](<Screenshot 2025-09-12 at 10.49.38 pm.png>)
+![Initial screen](public/screenshots/Screenshot%202025-09-12%20at%2010.51.52%E2%80%AFpm.png)
+![Filled rows](public/screenshots/Screenshot%202025-09-12%20at%2010.51.18%E2%80%AFpm.png)
+![Results screen](public/screenshots/Screenshot%202025-09-12%20at%2010.49.38%E2%80%AFpm.png)
 
 ## Live Demo
 
@@ -42,5 +42,6 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Known Issues
 
 when theres large gaps between the balance and monthly payment this causes a NaN error during calculation, need to look into industry info to update
-![large gap in inputs](<Screenshot 2025-09-12 at 10.56.56 pm.png>)
-![NaN error](<Screenshot 2025-09-12 at 10.56.49 pm.png>)
+
+![large gap in inputs](public/screenshots/Screenshot%202025-09-12%20at%2010.56.56%E2%80%AFpm.png)
+![NaN error](public/screenshots/Screenshot%202025-09-12%20at%2010.56.49%E2%80%AFpm.png)
