@@ -38,3 +38,9 @@ pnpm run dev # or npm run dev, yarn dev, bun dev
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Known Issues
+
+when theres large gaps between the balance and monthly payment this causes a NaN error during calculation, need to look into industry info to update
+![large gap in inputs](<Screenshot 2025-09-12 at 10.56.56 pm.png>)
+![NaN error](<Screenshot 2025-09-12 at 10.56.49 pm.png>)
