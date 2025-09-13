@@ -38,7 +38,9 @@ export default function InputView({
         debt.name.trim() === "" ||
         debt.amount.trim() === "" ||
         debt.apr.trim() === "" ||
-        debt.payment.trim() === ""
+        debt.payment.trim() === "" ||
+        Number(debt.payment) <=
+          (Number(debt.amount) * (Number(debt.apr) / 100)) / 12
           ? idx
           : -1
       )
