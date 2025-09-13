@@ -39,3 +39,7 @@ pnpm run dev # or npm run dev, yarn dev, bun dev
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Next Steps
+
+- make compatible with mobile browsers
+
