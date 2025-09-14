@@ -133,11 +133,18 @@ export default function CalculationComponent({
               marks={apr_marks}
               step={aprStep}
               sx={{
-                color: "#00AEEF",
+                color: "#E5E8EF",
                 height: 8,
                 "& .MuiSlider-thumb": {
                   backgroundColor: "#fff",
                   border: "2px solid #00AEEF",
+                },
+                "& .MuiSlider-track": {
+                  backgroundColor: "#00AEEF",
+                },
+                "& .MuiSlider-rail": {
+                  backgroundColor: "#E5E8EF",
+                  opacity: 1,
                 },
                 "& .MuiSlider-markLabel": { fontWeight: 600, color: "#6B6C7E" },
               }}
@@ -162,11 +169,18 @@ export default function CalculationComponent({
               }
               marks={term_marks}
               sx={{
-                color: "#00AEEF",
+                color: "#E5E8EF",
                 height: 8,
                 "& .MuiSlider-thumb": {
                   backgroundColor: "#fff",
                   border: "2px solid #00AEEF",
+                },
+                "& .MuiSlider-track": {
+                  backgroundColor: "#00AEEF",
+                },
+                "& .MuiSlider-rail": {
+                  backgroundColor: "#E5E8EF",
+                  opacity: 1,
                 },
                 "& .MuiSlider-markLabel": { fontWeight: 600, color: "#6B6C7E" },
               }}
