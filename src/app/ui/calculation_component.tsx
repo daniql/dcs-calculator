@@ -177,33 +177,33 @@ export default function CalculationComponent({
       <div className="border-l border-r border-b border-[#E5E8EF] bg-white">
         <div className="flex">
           <div className="flex flex-col flex-1 border-r border-[#E5E8EF]">
-            <div className="px-10 pt-8 pb-0">
-              <div className="mb-7 grid grid-cols-2">
-                <span className="whitespace-nowrap flex items-center">
+            <div className="px-7 pt-8 pb-0">
+              <div className="mb-7 flex justify-between items-center gap-4">
+                <span className="whitespace-nowrap flex items-center text-sm">
                   New Total Repayment
                 </span>
-                <span className="text-[#00AEEF] text-xl font-bold whitespace-nowrap flex items-center justify-end">
+                <span className="text-[#00AEEF] text-xl font-bold whitespace-nowrap flex items-center">
                   {formatCurrency(newTotalRepayment.toFixed(0))}
                 </span>
               </div>
-              <div className="mb-7 grid grid-cols-2">
-                <span className="whitespace-nowrap flex items-center">
+              <div className="mb-7 flex justify-between items-center gap-4">
+                <span className="whitespace-nowrap flex items-center text-sm">
                   Current Total Repayment
                 </span>
-                <span className="text-[#18193F] text-xl font-bold whitespace-nowrap flex items-center justify-end">
+                <span className="text-[#18193F] text-xl font-bold whitespace-nowrap flex items-center">
                   {formatCurrency(currentTotalRepayment.toFixed(0))}
                 </span>
               </div>
             </div>
             <div
-              className="grid grid-cols-2 px-10 py-6"
+              className="flex justify-between items-center gap-4 px-7 py-6"
               style={{ background: savingsBgColor(repaymentSavings) }}
             >
-              <span className="font-bold whitespace-nowrap flex items-center">
+              <span className="font-bold whitespace-nowrap flex items-center text-sm">
                 Total Repayment Savings
               </span>
               <span
-                className="text-xl font-bold whitespace-nowrap flex items-center justify-end"
+                className="text-xl font-bold whitespace-nowrap flex items-center"
                 style={{ color: savingsColor(repaymentSavings) }}
               >
                 {formatCurrency(repaymentSavings.toFixed(0))}
@@ -211,33 +211,33 @@ export default function CalculationComponent({
             </div>
           </div>
           <div className="flex flex-col flex-1">
-            <div className="px-10 pt-8 pb-0">
-              <div className="mb-7 grid grid-cols-2">
-                <span className="whitespace-nowrap flex items-center">
+            <div className="px-7 pt-8 pb-0">
+              <div className="mb-7 flex justify-between items-center gap-4">
+                <span className="whitespace-nowrap flex items-center text-sm">
                   New Monthly Payment
                 </span>
-                <span className="text-[#00AEEF] text-xl font-bold whitespace-nowrap flex items-center justify-end">
+                <span className="text-[#00AEEF] text-xl font-bold whitespace-nowrap flex items-center">
                   {formatCurrency(newMonthlyPayment.toFixed(2))}
                 </span>
               </div>
-              <div className="mb-7 grid grid-cols-2">
-                <span className="whitespace-nowrap flex items-center">
+              <div className="mb-7 flex justify-between items-center gap-4">
+                <span className="whitespace-nowrap flex items-center text-sm">
                   Current Monthly Payment
                 </span>
-                <span className="text-[#18193F] text-xl font-bold whitespace-nowrap flex items-center justify-end">
+                <span className="text-[#18193F] text-xl font-bold whitespace-nowrap flex items-center">
                   {formatCurrency(currentTotalMonthlyPayments.toFixed(0))}
                 </span>
               </div>
             </div>
             <div
-              className="grid grid-cols-2 px-10 py-6"
+              className="flex justify-between items-center gap-4 px-7 py-6"
               style={{ background: savingsBgColor(monthlySavings) }}
             >
-              <span className="font-bold whitespace-nowrap flex items-center">
+              <span className="font-bold whitespace-nowrap flex items-center text-sm">
                 Total Monthly Savings
               </span>
               <span
-                className="text-xl font-bold whitespace-nowrap flex items-center justify-end"
+                className="text-xl font-bold whitespace-nowrap flex items-center"
                 style={{ color: savingsColor(monthlySavings) }}
               >
                 {formatCurrency(monthlySavings.toFixed(2))}
