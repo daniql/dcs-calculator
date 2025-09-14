@@ -120,8 +120,10 @@ export default function InputView({
           Calculate Savings
         </Button>
         {showTooltip && (
-          <div className="absolute left-1/2 -translate-x-1/2 mt-2 text-sky-500 text-xs px-3 py-1 z-10">
-            Please make sure all fields are properly filled
+          <div className="absolute left-1/2 -translate-x-1/2 mt-2 text-sky-500 text-xs px-3 py-2 z-10 bg-white rounded text-center">
+            Incomplete or invalid input.<br />
+            Please fill out all fields.<br />
+            Current monthly payment must be greater than monthly interest.<br />
           </div>
         )}
       </div>
