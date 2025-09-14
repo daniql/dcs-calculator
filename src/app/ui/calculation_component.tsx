@@ -179,70 +179,84 @@ export default function CalculationComponent({
         <div className="flex">
           <div className="flex flex-col flex-1 border-r border-[#E5E8EF]">
             <div className="px-7 pt-8 pb-0">
-              <div className="mb-7 flex justify-between items-center gap-4">
-                <span className="whitespace-nowrap flex items-center text-sm">
+              <div className="mb-7 flex justify-between items-start gap-4">
+                <span className="text-sm flex-shrink-0 pt-1">
                   New Total Repayment
                 </span>
-                <span className="text-[#00AEEF] text-xl font-bold whitespace-nowrap flex items-center">
+                <div
+                  className="text-[#00AEEF] text-xl font-bold flex-1 text-right whitespace-nowrap overflow-hidden text-ellipsis"
+                  title={formatCurrency(newTotalRepayment.toFixed(0))}
+                >
                   {formatCurrency(newTotalRepayment.toFixed(0))}
-                </span>
+                </div>
               </div>
-              <div className="mb-7 flex justify-between items-center gap-4">
-                <span className="whitespace-nowrap flex items-center text-sm">
+              <div className="mb-7 flex justify-between items-start gap-4">
+                <span className="text-sm flex-shrink-0 pt-1">
                   Current Total Repayment
                 </span>
-                <span className="text-[#18193F] text-xl font-bold whitespace-nowrap flex items-center">
+                <div
+                  className="text-[#18193F] text-xl font-bold flex-1 text-right whitespace-nowrap overflow-hidden text-ellipsis"
+                  title={formatCurrency(currentTotalRepayment.toFixed(0))}
+                >
                   {formatCurrency(currentTotalRepayment.toFixed(0))}
-                </span>
+                </div>
               </div>
             </div>
             <div
-              className="flex justify-between items-center gap-4 px-7 py-6"
+              className="flex justify-between items-start gap-4 px-7 py-6"
               style={{ background: savingsBgColor(repaymentSavings) }}
             >
-              <span className="font-bold whitespace-nowrap flex items-center text-sm">
+              <span className="font-bold text-sm flex-shrink-0 pt-1">
                 Total Repayment Savings
               </span>
-              <span
-                className="text-xl font-bold whitespace-nowrap flex items-center"
+              <div
+                className="text-xl font-bold flex-1 text-right whitespace-nowrap overflow-hidden text-ellipsis"
                 style={{ color: savingsColor(repaymentSavings) }}
+                title={formatCurrency(repaymentSavings.toFixed(0))}
               >
                 {formatCurrency(repaymentSavings.toFixed(0))}
-              </span>
+              </div>
             </div>
           </div>
           <div className="flex flex-col flex-1">
             <div className="px-7 pt-8 pb-0">
-              <div className="mb-7 flex justify-between items-center gap-4">
-                <span className="whitespace-nowrap flex items-center text-sm">
+              <div className="mb-7 flex justify-between items-start gap-4">
+                <span className="text-sm flex-shrink-0 pt-1">
                   New Monthly Payment
                 </span>
-                <span className="text-[#00AEEF] text-xl font-bold whitespace-nowrap flex items-center">
+                <div
+                  className="text-[#00AEEF] text-xl font-bold flex-1 text-right whitespace-nowrap overflow-hidden text-ellipsis"
+                  title={formatCurrency(newMonthlyPayment.toFixed(2))}
+                >
                   {formatCurrency(newMonthlyPayment.toFixed(2))}
-                </span>
+                </div>
               </div>
-              <div className="mb-7 flex justify-between items-center gap-4">
-                <span className="whitespace-nowrap flex items-center text-sm">
+              <div className="mb-7 flex justify-between items-start gap-4">
+                <span className="text-sm flex-shrink-0 pt-1">
                   Current Monthly Payment
                 </span>
-                <span className="text-[#18193F] text-xl font-bold whitespace-nowrap flex items-center">
+                <div
+                  className="text-[#18193F] text-xl font-bold flex-1 text-right whitespace-nowrap overflow-hidden text-ellipsis"
+                  title={formatCurrency(currentTotalMonthlyPayments.toFixed(0))}
+                >
                   {formatCurrency(currentTotalMonthlyPayments.toFixed(0))}
-                </span>
+                </div>
               </div>
             </div>
             <div
-              className="flex justify-between items-center gap-4 px-7 py-6"
+              className="flex justify-between items-start gap-4 px-7 py-6"
               style={{ background: savingsBgColor(monthlySavings) }}
             >
-              <span className="font-bold whitespace-nowrap flex items-center text-sm">
+              <span className="font-bold text-sm flex-shrink-0 pt-1">
                 Total Monthly Savings
               </span>
-              <span
-                className="text-xl font-bold whitespace-nowrap flex items-center"
+              <div
+                className="text-xl font-bold flex-1 text-right whitespace-nowrap overflow-hidden text-ellipsis"
                 style={{ color: savingsColor(monthlySavings) }}
+                title={formatCurrency(monthlySavings.toFixed(2))}
               >
                 {formatCurrency(monthlySavings.toFixed(2))}
-              </span>
+              </div>
             </div>
           </div>
         </div>
