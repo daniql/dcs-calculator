@@ -51,6 +51,23 @@ export default function CalculationComponent({
   const savingsBgColor = (value: number) =>
     value >= 0 ? "#E6FAF7" : "#FDEAEA";
 
+  const sliderStyle = {
+    color: "#E5E8EF",
+    height: 8,
+    "& .MuiSlider-thumb": {
+      backgroundColor: "#fff",
+      border: "2px solid #00AEEF",
+    },
+    "& .MuiSlider-track": {
+      backgroundColor: "#00AEEF",
+    },
+    "& .MuiSlider-rail": {
+      backgroundColor: "#E5E8EF",
+      opacity: 1,
+    },
+    "& .MuiSlider-markLabel": { fontWeight: 600, color: "#6B6C7E" },
+  };
+
   function formatCurrency(numStr: string) {
     return (
       "$" +
@@ -117,7 +134,7 @@ export default function CalculationComponent({
           Use the sliders below to simulate the new APR and loan term.
         </p>
         <div className="mb-6 flex items-center gap-8">
-          <div className="flex flex-col min-w-[120px]">
+          <div className="flex flex-col w-[140px]">
             <div className="text-xs font-semibold text-[#18193F] mb-1 tracking-wide">
               DESIRED APR
             </div>
@@ -132,27 +149,12 @@ export default function CalculationComponent({
               onChange={(_, v) => setAprValue(typeof v === "number" ? v : v[0])}
               marks={apr_marks}
               step={aprStep}
-              sx={{
-                color: "#E5E8EF",
-                height: 8,
-                "& .MuiSlider-thumb": {
-                  backgroundColor: "#fff",
-                  border: "2px solid #00AEEF",
-                },
-                "& .MuiSlider-track": {
-                  backgroundColor: "#00AEEF",
-                },
-                "& .MuiSlider-rail": {
-                  backgroundColor: "#E5E8EF",
-                  opacity: 1,
-                },
-                "& .MuiSlider-markLabel": { fontWeight: 600, color: "#6B6C7E" },
-              }}
+              sx={sliderStyle}
             />
           </div>
         </div>
         <div className="flex items-center gap-8">
-          <div className="flex flex-col min-w-[120px]">
+          <div className="flex flex-col w-[140px]">
             <div className="text-xs font-semibold text-[#18193F] mb-1 tracking-wide">
               DESIRED LOAN TERM
             </div>
@@ -168,22 +170,7 @@ export default function CalculationComponent({
                 setTermValue(typeof v === "number" ? v : v[0])
               }
               marks={term_marks}
-              sx={{
-                color: "#E5E8EF",
-                height: 8,
-                "& .MuiSlider-thumb": {
-                  backgroundColor: "#fff",
-                  border: "2px solid #00AEEF",
-                },
-                "& .MuiSlider-track": {
-                  backgroundColor: "#00AEEF",
-                },
-                "& .MuiSlider-rail": {
-                  backgroundColor: "#E5E8EF",
-                  opacity: 1,
-                },
-                "& .MuiSlider-markLabel": { fontWeight: 600, color: "#6B6C7E" },
-              }}
+              sx={sliderStyle}
             />
           </div>
         </div>
